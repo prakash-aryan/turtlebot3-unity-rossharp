@@ -1,6 +1,6 @@
 # TurtleBot3 SLAM + Nav2 in Unity with ros-sharp
 
-Run the ROBOTIS TurtleBot3 navigation stack (`slam_toolbox` + `Nav2`) against a **Unity** simulation, using **ros-sharp** and **rosbridge** instead of Gazebo or the Unity Robotics ROS-TCP packages. Unity is only the simulator; all robotics logic (teleop, SLAM, navigation) runs on a standard ROS 2 backend. The robot can therefore be placed into any Unity scene and used as its world.
+Run the ROBOTIS TurtleBot3 navigation stack (`slam_toolbox` + `Nav2`) against a **Unity** simulation, using **ros-sharp** and **rosbridge** instead of Gazebo. Unity is only the simulator; all robotics logic (teleop, SLAM, navigation) runs on a standard ROS 2 backend. The robot can therefore be placed into any Unity scene and used as its world.
 
 This reproduces the ROBOTIS [SLAM](https://emanual.robotis.com/docs/en/platform/turtlebot3/slam_simulation/) and [Navigation](https://emanual.robotis.com/docs/en/platform/turtlebot3/nav_simulation/) simulation tutorials, with Unity in place of Gazebo.
 
@@ -57,7 +57,7 @@ Unity publishes the same topics a real TurtleBot3 would, and subscribes to the s
 
 </details>
 
-Transport is ros-sharp's `RosConnector` talking to `rosbridge_server` over a WebSocket. There is no Unity Robotics package and no ROS-TCP endpoint.
+Transport is ros-sharp's `RosConnector` talking to `rosbridge_server` over a WebSocket.
 
 ---
 
